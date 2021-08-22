@@ -1,2 +1,6 @@
-﻿  DownloadToolsDlg.cpp
+﻿  pch.cpp
+  CIniFileEdit.cpp
+  DownloadTools.cpp
+  DownloadToolsDlg.cpp
+  正在生成代码...
   DownloadTools.vcxproj -> D:\C&C++_CODE\DownloadTools\Debug\DownloadTools.exe

@@ -275,6 +275,8 @@ void CDownloadToolsDlg::LoadIniCfgParam()
 	// 初始化界面显示
 	m_ToolPath.SetWindowText(szToolPath);
 	m_FilePath.SetWindowText(szFilePath);
+
+	m_MsgBox.SetBackgroundColor(FALSE, RGB(0, 0, 0));
 }
 
 /*
@@ -454,7 +456,7 @@ void CDownloadToolsDlg::OnBnClickedDownload()
 	COLORREF col;
 	int ret = szOutput.Find(_T("Programming Finished"));
 	if (-1 != ret)
-		col = RGB(150, 150, 150);
+		col = RGB(0, 255, 0);
 	else
 		col = RGB(255, 0, 0);
 
