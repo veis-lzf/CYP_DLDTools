@@ -445,7 +445,8 @@ void CDownloadToolsDlg::OnBnClickedDownload()
 	CString ocdPath, filePath;
 	m_ToolPath.GetWindowText(ocdPath);
 	m_FilePath.GetWindowText(filePath);
-
+	filePath.Replace(_T('\\'), _T('/'));
+	
 	szCmd.Format(_T("\"%s\" -s \"%s\\scripts\" -f interface\\jlink.cfg -c ")
 		_T("\"transport select swd\" -f target\\traveo2_1m_0A.cfg -c \"program %s 0x0 verify exit\""),
 		ocdPath.GetString(), CString(CYP_PATH), filePath.GetString());
